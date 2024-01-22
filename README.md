@@ -1,5 +1,5 @@
 # tsc.nvim
-This is a fork to the [original repository](https://github.com/dmmulroy/tsc.nvim). 
+This is a fork of the [original repository](https://github.com/dmmulroy/tsc.nvim). 
 I just want to remove the intrusive "Type-checking already in progress" message.
 
 <img width="569" alt="image" src="https://user-images.githubusercontent.com/2755722/233876554-efb9cfe6-c038-46c8-a7cb-b7a4aa9eac5b.png">
