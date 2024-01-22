@@ -78,7 +78,6 @@ M.run = function()
   end
 
   if is_running then
-    vim.notify(format_notification_msg("Type-checking already in progress"), vim.log.levels.WARN, get_notify_options())
     return
   end
 
