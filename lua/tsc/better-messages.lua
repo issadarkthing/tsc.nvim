@@ -95,6 +95,10 @@ M.translate = function(message)
 
   local parsed = parse_md(improved_text_file)
 
+  if parsed.body == nil then
+    return message
+  end
+
   local params = get_params(parsed["original"])
 
   if #params == 0 then
