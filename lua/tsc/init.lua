@@ -204,14 +204,6 @@ function M.setup(opts)
   end, { desc = "Run `tsc` asynchronously and load the results into a qflist", force = true })
 
   if config.flags.watch then
-    vim.api.nvim_create_autocmd("BufWritePre", {
-      pattern = "*.{ts,tsx}",
-      desc = "Run tsc.nvim in watch mode automatically when saving a TypeScript file",
-      callback = function()
-        vim.notify("Type-checking your project via watch mode, hang tight 🚀", nil, get_notify_options())
-      end,
-    })
-
     if config.auto_start_watch_mode then
       vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
         pattern = "*.{ts,tsx}",
